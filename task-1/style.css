@@ -14,12 +14,6 @@ body {
 #logo {
   height: 10rem;
 }
-h2 {
-  font-size: 2.5rem;
-  color: white;
-  margin-bottom: 2rem;
-  text-align: center;
-}
 
 h1 {
   font-size: 2rem;
@@ -27,6 +21,20 @@ h1 {
   color: white;
   margin: 1rem 0;
 }
+
+h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+}
+
 p,
 li {
   color: white;
@@ -48,4 +56,18 @@ section {
   display: block;
   margin: 2rem 0;
   padding: 2rem;
+}
+
+section img {
+  height: 25rem;
+  text-align: left;
+}
+
+.menu {
+  background-color: white;
+}
+
+table {
+  margin: auto;
+  border: 1;
 }
