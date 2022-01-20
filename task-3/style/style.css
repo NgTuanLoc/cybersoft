@@ -1,0 +1,128 @@
+body {
+  margin: 10px 15px;
+}
+
+/* ---------------Header--------------- */
+header {
+  background-color: #f1e1db;
+  padding: 5px;
+}
+
+header .logo {
+  margin-left: 35px;
+  padding: 10px 0 0 0;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 5px;
+  list-style: none;
+}
+
+header li a {
+  color: black;
+}
+
+/* ---------------Carousel--------------- */
+/* #carousel img {
+  width: 100%;
+  object-fit: cover;
+} */
+#carousel {
+  background-image: url("../image/BG.png");
+  height: 600px;
+  background-size: cover;
+  background-position: 0px -250px;
+}
+
+/* ---------------Activities Section--------------- */
+#activities {
+  background-color: #faf4f2;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.activities_title {
+  text-align: center;
+}
+
+.activities_title img {
+  margin: 0 auto;
+  display: block;
+}
+
+.activities_text {
+  padding: 10px;
+}
+
+.activities_item {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Float will make the parent block loses its height attribute */
+.clear-both {
+  clear: both;
+}
+/* Solved */
+
+.activities_text {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.img_block img {
+  border-radius: 35px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img_block {
+  position: relative;
+}
+
+.img_block i {
+  position: absolute;
+  font-size: 20px;
+  color: red;
+  background-color: rgba(255, 255, 255, 0.4);
+  top: 15px;
+  right: 15px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#activities h1 {
+  font-size: 50px;
+  color: gray;
+  margin: 15px 0;
+}
+
+.activities_text button {
+  border: none;
+  padding: 10px 30px;
+  letter-spacing: 2;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.view-all {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.view-all button {
+  font-weight: 300;
+  font-size: 20px;
+  color: red;
+  background-color: transparent;
+  border: 1px solid red;
+  padding: 10px 50px;
+  border-radius: 50px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
