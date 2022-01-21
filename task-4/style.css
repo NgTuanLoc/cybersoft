@@ -1,0 +1,159 @@
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --clr-primary: #ffffff;
+  --clr-primary-2: #f6f6f6;
+
+  --clr-secondary: #002146;
+  --clr-secondary-2: #797979;
+
+  --clr-logo: #f1c005;
+  --clr-button: #fdc800;
+
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+}
+
+.clear-both {
+  clear: both;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 2rem;
+  background-color: var(--clr-primary);
+  line-height: 1.25;
+  font-size: 0.625;
+}
+
+header {
+  padding: 0 2rem;
+}
+
+section {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+/*
+=============== 
+Typography
+===============
+*/
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  color: var(--clr-secondary-2);
+  margin-bottom: 1.25rem;
+}
+
+button {
+  background-color: var(--clr-button);
+  padding: 0.7rem 1rem;
+  border: none;
+  letter-spacing: var(--spacing);
+  border-radius: var(--radius);
+  font-weight: bold;
+}
+/*
+=============== 
+Header
+===============
+*/
+.header__logo i {
+  font-size: 1.5rem;
+  color: var(--clr-logo);
+  background-color: var(--clr-secondary);
+  border-radius: 50%;
+  padding: 0.7rem;
+  transform: translateY(-15%);
+}
+
+.header__nav li {
+  float: left;
+  margin: 0 1.5rem;
+  font-weight: bold;
+}
+
+/*
+=============== 
+Carousel
+===============
+*/
+.carousel {
+  height: 38rem;
+  background-image: url("./images/2.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+/*
+=============== 
+About
+===============
+*/
+.about__content {
+  float: left;
+  width: 50%;
+  padding: 0 4rem;
+}
+
+.about__image {
+  float: left;
+  width: 50%;
+  padding: 0 4rem;
+}
+
+.about__image img {
+  width: 90%;
+}
+
+/*
+=============== 
+info
+===============
+*/
+.info{
+    background-color: var(--clr-primary-2);
+    height: 10vh;
+}
