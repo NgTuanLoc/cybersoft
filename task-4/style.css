@@ -48,7 +48,7 @@ header {
 section {
   width: 100%;
   margin: 2rem 0;
-  padding: 2rem 4rem;
+  padding: 6rem 4rem;
 }
 /*
 =============== 
@@ -117,6 +117,8 @@ Header
 
 hr {
   color: var(--clr-primary-2);
+  width: 95%;
+  margin: 0 auto;
 }
 /*
 =============== 
@@ -192,15 +194,15 @@ Categories
 .categories__item {
   float: left;
   width: 20%;
-  margin: 2rem 2.5%;
-  padding: 1rem 2.5rem;
+  margin: 1.5rem 2.5%;
+  padding: 2rem 1rem;
   background-color: var(--clr-secondary);
 }
 
 .categories__item i,
 .categories__item h3 {
   color: white;
-  padding: 0.5rem;
+  padding: 0.2rem;
 }
 
 .categories__item i {
@@ -218,6 +220,7 @@ Activities
 */
 .activities {
   background-color: var(--clr-primary-2);
+  margin-bottom: 0;
 }
 
 .activities__left {
@@ -229,7 +232,7 @@ Activities
 .activities__posts {
   background-color: white;
   padding: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .post {
@@ -255,7 +258,7 @@ Activities
 .event {
   width: 100%;
   background-color: white;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   padding: 3rem 1.5rem;
 }
 
@@ -313,4 +316,47 @@ Activities
 
 .activities__button {
   text-align: right;
+}
+
+/*
+=============== 
+Footer
+===============
+*/
+footer {
+  background-color: var(--clr-secondary);
+  color: white;
+  padding: 5rem;
+}
+
+footer hr {
+  margin: 2rem 0;
+  color: gray;
+}
+
+.contact i {
+  color: var(--clr-logo);
+  margin-right: 0.5rem;
+}
+
+.contact__item {
+  float: left;
+  width: 27%;
+  margin-right: 5%;
+}
+
+.contact__item li {
+  line-height: 2;
+}
+
+.contact__item h3 {
+  margin-bottom: 2rem;
+}
+
+.contact__item i {
+  font-size: 1.2rem;
+}
+
+.copyright {
+  text-align: center;
 }
