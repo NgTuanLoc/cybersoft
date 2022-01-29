@@ -1,0 +1,17 @@
+.links-primary::before {
+  content: "\f00c";
+  font-family: "Line Awesome Free";
+  font-size: 24px;
+  padding: 0.3rem;
+  margin-right: 1rem;
+  width: 35px;
+  height: 35px;
+  background: #000;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  border-radius: 35px;
+  font-weight: 900;
+  background-image: $color-gradient;
+  background-size: 200%;
+}

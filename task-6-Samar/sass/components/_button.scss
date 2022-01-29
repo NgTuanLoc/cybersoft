@@ -1,0 +1,17 @@
+.btn {
+  color: white;
+  background-image: $color-gradient;
+  background-size: 200%;
+  background-color: $color-primary;
+  padding: 2rem 3.5rem;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 2rem;
+  transition: $transition;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-position: right center;
+}
