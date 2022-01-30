@@ -148,3 +148,39 @@
     }
   }
 }
+
+// ====================OUTCOME====================
+.outcome {
+  background-image: url("../../images/bg14.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 8rem;
+  margin-bottom: 5rem;
+  &__item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      color: white;
+      font-size: 4.5rem;
+      background-image: $color-gradient;
+      background-size: 200%;
+      background-color: $color-primary;
+      padding: 2rem;
+      border-radius: 50%;
+    }
+
+    h1 {
+      color: $color-primary;
+      margin-bottom: 1rem;
+    }
+  }
+}
