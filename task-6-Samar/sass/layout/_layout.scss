@@ -159,8 +159,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 8rem;
-  margin-bottom: 5rem;
+  padding: 8rem;
+  padding-bottom: 5rem;
   &__item {
     height: 100%;
     display: flex;
@@ -181,6 +181,63 @@
     h1 {
       color: $color-primary;
       margin-bottom: 1rem;
+    }
+  }
+}
+
+// ====================STORY====================
+.story {
+  display: flex;
+  background-image: url("../../images/bg2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #fefefe;
+
+  &__left {
+    width: 55%;
+    padding-left: 10rem;
+    margin-right: 2rem;
+  }
+  &__box {
+
+    display: flex;
+    padding: 1rem;
+    padding-left: 0;
+
+    margin-bottom: 3rem;
+    background-color: white;
+    border-radius: $radius;
+    width: 80%;
+    align-items: center;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(194, 185, 185);
+
+    h3{
+      font-size: 2.5rem;
+      color: black;
+    }
+
+    &--right{
+      transform: translateX(7rem);
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    margin: 4rem;
+    i {
+      color: $color-primary;
+      font-size: 9rem;
+    }
+  }
+
+  &__right {
+    width: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
   }
 }
