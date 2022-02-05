@@ -282,3 +282,63 @@
     }
   }
 }
+
+// ====================Plan====================
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
+  &__item {
+    width: 30%;
+    padding: 2rem;
+    border-radius: $radius;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    ul {
+      text-align: left;
+      padding: 1rem 3rem;
+      li {
+        margin: 0.7rem 0;
+      }
+    }
+    hr {
+      width: 80%;
+      color: #f0f0f7;
+      margin: 2rem auto;
+    }
+  }
+
+  &__header {
+    h2 {
+      font-size: 3rem;
+      color: black;
+    }
+    img {
+      width: 40%;
+    }
+
+    h3 {
+      font-size: 5rem;
+      color: #f8ae56;
+
+      span {
+        font-size: 2.5rem;
+        color: black;
+      }
+    }
+  }
+}
