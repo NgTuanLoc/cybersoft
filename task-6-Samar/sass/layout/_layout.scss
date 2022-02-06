@@ -13,6 +13,9 @@
   align-items: center;
   background-color: transparent;
 
+  button.btn {
+    margin-top: 0;
+  }
   &__links {
     display: flex;
     justify-content: space-evenly;
@@ -26,8 +29,13 @@
       i {
         position: relative;
         margin-left: 0.5rem;
-        font-size: 1rem;
+        font-size: 1.4rem;
         top: -2px;
+      }
+
+      span {
+        font-size: 2rem;
+        font-weight: bold;
       }
     }
   }
@@ -50,6 +58,7 @@
 
     li {
       font-size: 2rem;
+      margin-bottom: 1rem;
     }
   }
   &__image {
@@ -365,10 +374,14 @@
     justify-content: space-evenly;
   }
 
+  img {
+    border-radius: 1.5rem;
+  }
+
   &__item {
     width: 30%;
     background-color: #feeff3;
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
     button {
       font-size: 2rem;
 
@@ -393,6 +406,132 @@
     font-size: 2.5rem;
     span {
       color: $color-primary;
+    }
+  }
+}
+
+// ====================Sponsor====================
+.sponsor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: auto 10rem;
+  &__image {
+    width: 6%;
+  }
+  margin-bottom: 10rem;
+}
+
+// ====================Footer====================
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10rem;
+  padding-top: 25rem;
+  background-color: #0e1b1f;
+  background-image: url("../../images/bg4.png"),
+    url("../../images/pattern2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, top;
+  background-size: contain;
+  i.icon-primary {
+    display: inline-block;
+    font-size: 2.5rem;
+    color: white;
+    background-image: $color-gradient;
+    background-size: 200%;
+    background-color: $color-primary;
+    padding: 1.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: $color-paragraph;
+  }
+
+  a {
+    color: $color-paragraph;
+    font-size: 2rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    img {
+      width: 80%;
+      margin-bottom: 1rem;
+    }
+
+    i.icon-secondary {
+      font-size: 1.5rem;
+      color: #9ea3a5;
+      background-color: transparent;
+      margin-right: 1rem;
+    }
+
+    h5 {
+      font-size: 3rem;
+      color: white;
+    }
+
+    h5::after,
+    h5::before {
+      content: "";
+      display: block;
+      position: relative;
+      bottom: 0;
+      left: 0;
+      height: 5px;
+      border-radius: 20px;
+      background: $color-gradient;
+      background-size: 200%;
+    }
+    h5::before {
+      width: 1.5rem;
+      position: relative;
+      top: 3.8rem;
+    }
+    h5::after {
+      width: 6.5rem;
+      left: 2.5rem;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    padding: 2rem;
+    background-color: #1f343b;
+    justify-content: space-around;
+    align-items: center;
+    color: $color-paragraph;
+
+    &--left {
+      a {
+        color: $color-primary;
+      }
+    }
+
+    &--right {
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        background-color: #36494f;
+        border-radius: 50%;
+        margin: auto 1rem;
+        cursor: pointer;
+      }
+      i {
+        font-size: 1.8rem;
+      }
     }
   }
 }

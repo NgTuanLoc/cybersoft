@@ -37,6 +37,10 @@ img {
   object-fit: cover;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -109,6 +113,9 @@ li {
   align-items: center;
   background-color: transparent;
 }
+.header button.btn {
+  margin-top: 0;
+}
 .header__links {
   display: flex;
   justify-content: space-evenly;
@@ -123,8 +130,12 @@ li {
 .header__links ul i {
   position: relative;
   margin-left: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
   top: -2px;
+}
+.header__links ul span {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .carousel {
@@ -143,6 +154,7 @@ li {
 }
 .carousel__content li {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 .carousel__image {
   flex-basis: 40%;
@@ -421,10 +433,13 @@ li {
   display: flex;
   justify-content: space-evenly;
 }
+.blog img {
+  border-radius: 1.5rem;
+}
 .blog__item {
   width: 30%;
   background-color: #feeff3;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
 }
 .blog__item button {
   font-size: 2rem;
@@ -449,6 +464,115 @@ li {
   color: #f55f8d;
 }
 
+.sponsor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: auto 10rem;
+  margin-bottom: 10rem;
+}
+.sponsor__image {
+  width: 6%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10rem;
+  padding-top: 25rem;
+  background-color: #0e1b1f;
+  background-image: url("../../images/bg4.png"), url("../../images/pattern2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, top;
+  background-size: contain;
+}
+.footer i.icon-primary {
+  display: inline-block;
+  font-size: 2.5rem;
+  color: white;
+  background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+  background-size: 200%;
+  background-color: #f55f8d;
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.footer li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  color: #9ea3a5;
+}
+.footer a {
+  color: #9ea3a5;
+  font-size: 2rem;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer__item img {
+  width: 80%;
+  margin-bottom: 1rem;
+}
+.footer__item i.icon-secondary {
+  font-size: 1.5rem;
+  color: #9ea3a5;
+  background-color: transparent;
+  margin-right: 1rem;
+}
+.footer__item h5 {
+  font-size: 3rem;
+  color: white;
+}
+.footer__item h5::after,
+.footer__item h5::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+  background-size: 200%;
+}
+.footer__item h5::before {
+  width: 1.5rem;
+  position: relative;
+  top: 3.8rem;
+}
+.footer__item h5::after {
+  width: 6.5rem;
+  left: 2.5rem;
+}
+.footer__copyright {
+  display: flex;
+  padding: 2rem;
+  background-color: #1f343b;
+  justify-content: space-around;
+  align-items: center;
+  color: #9ea3a5;
+}
+.footer__copyright--left a {
+  color: #f55f8d;
+}
+.footer__copyright--right a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #36494f;
+  border-radius: 50%;
+  margin: auto 1rem;
+  cursor: pointer;
+}
+.footer__copyright--right i {
+  font-size: 1.8rem;
+}
+
 .btn {
   color: white;
   background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
@@ -461,6 +585,8 @@ li {
   margin-top: 2rem;
   transition: all 0.5s;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .btn:hover {
@@ -471,7 +597,7 @@ li {
   content: "\f00c";
   font-family: "Line Awesome Free";
   font-size: 24px;
-  padding: 0.3rem;
+  padding: 0.5rem;
   margin-right: 1rem;
   width: 35px;
   height: 35px;
