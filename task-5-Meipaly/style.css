@@ -319,6 +319,7 @@ Showcase
 
 .showcase__item {
   height: 60rem;
+  position: relative;
 }
 
 .showcase__content img {
@@ -326,4 +327,47 @@ Showcase
   height: 100%;
   object-fit: cover;
   filter: grayscale(100%) contrast(50%);
+}
+
+.showcase__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(230, 43, 74, 0.6);
+  padding: 2.5rem;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.showcase__overlay i {
+  font-size: 2.5rem;
+  color: black;
+  padding: 1rem;
+  background-color: white;
+  position: absolute;
+  right: 2.5rem;
+  top: 2.5rem;
+}
+
+.showcase__text{
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  text-align: left;
+}
+
+.showcase__item p {
+  font-size: 2.5rem;
+  color: #d0c7c8;
+}
+
+.showcase__item h3 {
+  font-size: 3rem;
+  color: white;
+}
+
+.showcase__overlay:hover {
+  opacity: 1;
 }
