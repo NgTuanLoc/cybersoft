@@ -8,6 +8,8 @@ Variables
   --clr-secondary: #888888;
   --clr-active-link: #e62b4a;
 
+  --clr-background-2: #f3f3f3;
+
   --spacing: 0.1rem;
   --radius: 0.25rem;
 
@@ -349,13 +351,23 @@ Showcase
   position: absolute;
   right: 2.5rem;
   top: 2.5rem;
+  transform: translateY(2rem);
+  transition: all 1s;
+  cursor: pointer;
 }
 
-.showcase__text{
+.showcase__overlay i:hover {
+  background-color: black;
+  color: white;
+}
+
+.showcase__text {
   position: absolute;
   bottom: 2.5rem;
   left: 2.5rem;
   text-align: left;
+  transform: translateY(3rem);
+  transition: all 1s;
 }
 
 .showcase__item p {
@@ -371,3 +383,20 @@ Showcase
 .showcase__overlay:hover {
   opacity: 1;
 }
+
+.showcase__overlay:hover i {
+  transform: translateY(0);
+}
+
+.showcase__overlay:hover .showcase__text {
+  transform: translateY(0);
+}
+
+/*
+==================
+Showcase
+==================
+*/
+/* h1{
+  background-color: var(--clr-background-2);
+} */

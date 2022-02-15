@@ -14,6 +14,10 @@
       rel="stylesheet"
     />
     <link
+      href="./libs/fancybox/dist/jquery.fancybox.min.css"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
@@ -144,7 +148,13 @@
           <img src="./image/showcase_img_1.webp" alt="showcase image" />
           <div class="showcase__overlay">
             <div class="showcase__icon">
-              <i class="fas fa-search-plus"></i>
+              <a
+                href="./image/showcase_img_1.webp"
+                data-fancybox="galery"
+                data-caption="image 1"
+              >
+                <i class="fas fa-search-plus"></i>
+              </a>
             </div>
             <div class="showcase__text">
               <p>LOGO</p>
@@ -156,7 +166,13 @@
           <img src="./image/showcase_img_2.webp" alt="showcase image" />
           <div class="showcase__overlay">
             <div class="showcase__icon">
-              <i class="fas fa-search-plus"></i>
+              <a
+                href="./image/showcase_img_2.webp"
+                data-fancybox="galery"
+                data-caption="image 2"
+              >
+                <i class="fas fa-search-plus"></i>
+              </a>
             </div>
             <div class="showcase__text">
               <p>LOGO</p>
@@ -168,7 +184,13 @@
           <img src="./image/showcase_img_3.webp" alt="showcase image" />
           <div class="showcase__overlay">
             <div class="showcase__icon">
-              <i class="fas fa-search-plus"></i>
+              <a
+                href="./image/showcase_img_3.webp"
+                data-fancybox="galery"
+                data-caption="image 3"
+              >
+                <i class="fas fa-search-plus"></i>
+              </a>
             </div>
             <div class="showcase__text">
               <p>LOGO</p>
@@ -180,7 +202,13 @@
           <img src="./image/showcase_img_5.webp" alt="showcase image" />
           <div class="showcase__overlay">
             <div class="showcase__icon">
-              <i class="fas fa-search-plus"></i>
+              <a
+                href="./image/showcase_img_5.webp"
+                data-fancybox="galery"
+                data-caption="image 4"
+              >
+                <i class="fas fa-search-plus"></i>
+              </a>
             </div>
             <div class="showcase__text">
               <p>LOGO</p>
@@ -192,7 +220,13 @@
           <img src="./image/showcase_img_6.webp" alt="showcase image" />
           <div class="showcase__overlay">
             <div class="showcase__icon">
-              <i class="fas fa-search-plus"></i>
+              <a
+                href="./image/showcase_img_6.webp"
+                data-fancybox="galery"
+                data-caption="img 6"
+              >
+                <i class="fas fa-search-plus"></i>
+              </a>
             </div>
             <div class="showcase__text">
               <p>LOGO</p>
@@ -204,7 +238,13 @@
           <img src="./image/showcase_img_7.webp" alt="showcase image" />
           <div class="showcase__overlay">
             <div class="showcase__icon">
-              <i class="fas fa-search-plus"></i>
+              <a
+                href="./image/showcase_img_7.webp"
+                data-fancybox="galery"
+                data-caption="img 6"
+              >
+                <i class="fas fa-search-plus"></i>
+              </a>
             </div>
             <div class="showcase__text">
               <p>LOGO</p>
@@ -214,12 +254,24 @@
         </div>
       </div>
     </section>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="./libs/fancybox/dist/jquery.fancybox.js"
+    ></script>
+
     <script src="./libs/slick/slick/slick.min.js"></script>
     <script>
       $(document).ready(function () {
