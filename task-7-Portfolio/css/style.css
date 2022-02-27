@@ -1,55 +1,212 @@
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --clr-primary: #ffffff;
+  --clr-secondary: #35a22c;
+  --clr-tertiary: #222222;
+
+  --clr-text: #585858;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --transition: all 0.5s;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-primary);
+  line-height: 1.25;
+  font-size: 0.625;
+}
+
+section {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 6rem 4rem;
+}
+/*
+=============== 
+Typography
+===============
+*/
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+h1 {
+  font-size: 5.6rem;
+  line-height: 6.5rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+  color: #1a1d2d;
+  font-weight: 600;
+}
+
+p {
+  color: var(--clr-text);
+  line-height: 2.4rem;
+}
+
+a,
+li {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Navbar */
 header {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   left: 50%;
   transform: translateX(-50%);
+  width: 85%;
+}
+nav {
+  background-color: transparent;
+}
+
+nav .navbar-toggler {
+  background-color: var(--clr-secondary);
+  color: white;
+}
+
+nav li::after {
+  content: "";
+  width: 0%;
+  background-color: var(--clr-secondary);
+  display: block;
+  height: 2px;
+  transition: var(--transition);
+}
+
+nav li:hover::after {
+  width: 100%;
+}
+
+nav a {
+  transition: var(--transition);
+}
+
+nav li:hover a {
+  color: var(--clr-secondary);
 }
 
 .logo i {
-  color: green;
+  color: var(--clr-secondary);
 }
 
 .logo span {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: white;
 }
 
-.menu li {
-  margin: 0 1rem;
+@media screen and (max-width: 900px) {
+  nav ul {
+    background-color: white;
+    padding-left: 10rem;
+  }
+
+  .nav-link {
+    color: var(--clr-secondary) !important;
+  }
+
+  .nav-item {
+    padding-left: 2rem;
+    position: relative;
+  }
+
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    background-color: var(--clr-secondary);
+    display: block;
+    height: 100%;
+    transition: var (--transition);
+    z-index: 1;
+  }
+
+  .nav-item:hover::after {
+    opacity: 1;
+  }
+
+  .nav-item:hover a {
+    position: relative;
+    color: white !important;
+    z-index: 2;
+  }
 }
 
-.menu li::after {
-  content: "";
-  background-color: green;
-  width: 0;
-  height: 5px;
-  display: block;
-  transition: all 0.5s;
+.nav-item {
+  margin-right: 1rem;
 }
 
-.menu li.active::after {
+/* Carousel */
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background: rgba(39, 43, 54, 0.5);
+  background-size: cover;
+}
+
+.overlay img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.menu li:hover::after {
-  width: 100%;
-}
-
-/* carousel */
 .carousel-item {
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
 
-.carousel-item:nth-child(1) {
+.carousel-item:nth-child(2) {
   background-image: url("./../images/finland.jpg");
 }
 
-.carousel-item:nth-child(2) {
+.carousel-item:nth-child(3) {
   background-image: url("./../images/mountains.jpg");
 }
 
-.carousel-item:nth-child(3) {
+.carousel-item:nth-child(4) {
   background-image: url("./../images/mountains-1.jpg");
 }
 
@@ -67,3 +224,27 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
+
+.carousel-caption h3 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 400;
+}
+
+.carousel-caption p {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 50;
+}
+
+.carousel-indicators li {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  border: none;
+  color: #898a8d;
+}
+.carousel-indicators li.active {
+  background-color: var(--clr-secondary);
+}
+/* data-aos-anchor="#BLAH" */
