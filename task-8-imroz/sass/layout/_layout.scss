@@ -100,6 +100,16 @@ header {
     justify-content: center;
     align-items: center;
     grid-gap: 5rem;
+
+    @media screen and (max-width: $breakpoint-tab) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem;
+    }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      grid-template-columns: repeat(1, 80%);
+      grid-gap: 2rem;
+    }
   }
 
   &__card {
@@ -150,5 +160,20 @@ header {
       transform: translateY(-1rem);
       box-shadow: $box-shadow;
     }
+  }
+}
+
+//  =========== Project  ===========
+.project {
+  background-image: url("../../images/bg-image-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
   }
 }
