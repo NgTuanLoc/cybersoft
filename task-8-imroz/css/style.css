@@ -25,7 +25,7 @@ h6 {
 }
 
 section {
-  padding: 11.5rem 4rem 0 4rem;
+  padding: 10rem 5rem;
 }
 
 img {
@@ -47,13 +47,20 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
-  font-weight: 600;
-  line-height: 62px;
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 50px;
   margin-bottom: 2rem;
 }
 
 h3 {
+  margin-bottom: 1.9rem;
+  font-weight: 600;
+  font-size: 5.5rem;
+}
+
+h4 {
   margin-bottom: 1.9rem;
   font-weight: 600;
   font-size: 2rem;
@@ -76,7 +83,7 @@ a {
 
 p {
   color: rgba(29, 29, 36, 0.75);
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 30px;
 }
 
@@ -84,13 +91,142 @@ p {
   font-weight: 600;
   letter-spacing: 0.5px;
   line-height: 18px;
-  font-size: 1.6rem;
+  font-size: 2rem;
   border-radius: 4px;
   margin-bottom: 1.2rem;
   background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+
+header {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  background-color: transparent;
+}
+header img {
+  width: 16rem;
+}
+header li {
+  margin-right: 2rem;
+}
+header li a {
+  color: white !important;
+}
+header button.navbar-toggler {
+  border: none;
+}
+header i.fas {
+  font-size: 3rem;
+  color: white;
+}
+
+.carousel {
+  width: 100vw;
+  padding: 0;
+}
+.carousel img {
+  position: relative;
+}
+.carousel-content {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  z-index: 23;
+}
+.carousel-content h2 {
+  margin-bottom: 6rem;
+}
+.carousel-indicators li {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.carousel-indicators li.active {
+  background-color: transparent;
+  border: 3px solid #fd4766;
+}
+.carousel i {
+  font-size: 3rem;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 2.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.carousel .carousel-control-prev i:hover {
+  transform: translateX(-50%);
+  background-color: #fd4766;
+}
+.carousel .carousel-control-next i:hover {
+  transform: translateX(50%);
+  background-color: #fd4766;
+}
+
+.service {
+  text-align: center;
+}
+.service__content {
+  display: grid;
+  margin-top: 3rem;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5rem;
+}
+.service__card {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  text-align: left;
+  padding: 4rem 3rem;
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+}
+.service__card .icon {
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 23px;
+  text-align: center;
+  border-radius: 100%;
+  display: flex;
+  margin-bottom: 3rem;
+}
+.service__card .icon svg {
+  width: 47px;
+  height: 47px;
+}
+.service__card .icon-1 {
+  color: #fd4766;
+}
+.service__card .icon-2 {
+  color: #337dff;
+}
+.service__card .icon-3 {
+  color: #12d8df;
+}
+.service__card .icon-4 {
+  color: #59c98d;
+}
+.service__card .icon-5 {
+  color: #6f41f6;
+}
+.service__card .icon-6 {
+  color: #357ff6;
+}
+.service__card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0px 2px 70px 0px rgba(253, 71, 102, 0.05);
 }
 
 .header-btn {
@@ -110,9 +246,9 @@ p {
 
 .default-btn {
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   padding: 1.6rem 4rem;
   border-radius: 500px;
   display: inline-block;
@@ -127,6 +263,15 @@ p {
   background: transparent;
   border-color: #fd4766;
   color: #fd4766;
+}
+
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background: rgba(39, 43, 54, 0.05);
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

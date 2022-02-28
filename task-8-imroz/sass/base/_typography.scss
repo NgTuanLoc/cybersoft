@@ -7,13 +7,20 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
-  font-weight: 600;
-  line-height: 62px;
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 50px;
   margin-bottom: 2rem;
 }
 
 h3 {
+  margin-bottom: 1.9rem;
+  font-weight: 600;
+  font-size: 5.5rem;
+}
+
+h4 {
   margin-bottom: 1.9rem;
   font-weight: 600;
   font-size: 2rem;
@@ -36,7 +43,7 @@ a {
 
 p {
   color: $color-gray;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 30px;
 }
 
@@ -44,7 +51,7 @@ p {
   font-weight: 600;
   letter-spacing: 0.5px;
   line-height: 18px;
-  font-size: 1.6rem;
+  font-size: 2rem;
   border-radius: 4px;
   margin-bottom: 1.2rem;
   background: linear-gradient(
