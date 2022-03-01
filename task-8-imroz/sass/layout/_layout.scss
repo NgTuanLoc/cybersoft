@@ -175,5 +175,19 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
+
+    @media screen and (max-width: $breakpoint-tab) {
+      & {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+      }
+    }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      & {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
   }
 }

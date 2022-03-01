@@ -11,6 +11,17 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+@media only screen and (max-width: $breakpoint-tab) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: $breakpoint-mobile) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
