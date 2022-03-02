@@ -283,14 +283,6 @@ header i.fas {
 .about {
   padding: 10rem 10rem;
 }
-@media screen and (max-width: 700px) {
-  .about .row {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2rem;
-  }
-}
 .about__image img {
   border-radius: 10px;
 }
@@ -325,6 +317,73 @@ header i.fas {
   background-color: #fd4766;
   padding: 1rem 2rem;
   border-radius: 5rem;
+}
+
+.testimonial {
+  background-color: #f9f9f9;
+  position: relative;
+  padding: 10rem;
+}
+.testimonial p::before {
+  position: absolute;
+  width: 177px;
+  height: 100%;
+  left: -64px;
+  top: -57px;
+  background-image: url("../../images/image-1.png");
+  content: "";
+  opacity: 1;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.testimonial p {
+  font-size: 3rem;
+  line-height: 4.8rem;
+  color: #18181b;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: -1.6rem;
+  position: relative;
+  z-index: 2;
+}
+.testimonial h6 {
+  font-size: 1.8rem;
+  line-height: 5rem;
+  color: #8c8c8c;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.testimonial h6 span {
+  color: #fd4766;
+  font-weight: 500;
+}
+.testimonial__profile {
+  margin: 1rem 0;
+}
+.testimonial__profile img {
+  border-radius: 10px;
+}
+.testimonial .nav-item {
+  padding: 0 !important;
+}
+.testimonial .nav-item img {
+  transform: scale(0.9);
+  filter: grayscale(0.6);
+  transition: all 1s;
+}
+.testimonial .nav-link:hover {
+  border: none !important;
+}
+.testimonial .nav-item .active {
+  border: none !important;
+  background-color: transparent !important;
+}
+.testimonial .nav-item .active img {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+.testimonial .nav-tabs {
+  border: none !important;
 }
 
 .header-btn {
