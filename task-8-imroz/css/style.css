@@ -38,6 +38,16 @@ section {
   padding: 10rem !important;
 }
 
+@media screen and (max-width: 1200px) {
+  section {
+    padding: 3rem !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  section {
+    padding: 1rem !important;
+  }
+}
 img {
   width: 100%;
   height: 100%;
@@ -141,6 +151,7 @@ header i.fas {
 
 .carousel {
   width: 100vw;
+  padding: 0 !important;
 }
 .carousel img {
   position: relative;
@@ -409,6 +420,33 @@ header i.fas {
   padding: 1rem;
 }
 
+.client {
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.client__content {
+  margin-top: 5rem;
+}
+.client__item {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.client__item:hover {
+  background-color: #fd4766;
+  transform: scale(1.1);
+}
+.client img {
+  position: relative;
+  top: 50%;
+  width: 60%;
+  height: 60%;
+  padding: auto 0;
+  object-fit: contain;
+  transform: translateY(-50%);
+}
+
 .header-btn {
   border: 2px solid rgba(255, 255, 255, 0.2);
   color: white;
@@ -557,6 +595,22 @@ header i.fas {
   .card:hover .card__content {
     top: 55%;
   }
+}
+
+.no-right-border {
+  border-right: none;
+}
+
+.no-left-border {
+  border-left: none;
+}
+
+.no-top-border {
+  border-top: none;
+}
+
+.no-bottom-border {
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -39,6 +39,18 @@ section {
   padding: 10rem !important;
 }
 
+@media screen and (max-width: $breakpoint-tab) {
+  section {
+    padding: 3rem !important;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  section {
+    padding: 1rem !important;
+  }
+}
+
 img {
   width: 100%;
   height: 100%;
