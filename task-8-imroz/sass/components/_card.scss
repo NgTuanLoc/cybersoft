@@ -88,7 +88,7 @@
 
     h4 {
       color: white;
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
   &__content-slideUp {
@@ -112,7 +112,7 @@
   }
 
   &:hover &__content {
-    top: 65%;
+    top: 60%;
     @media screen and (max-width: $breakpoint-tab) {
       & {
         top: 55%;

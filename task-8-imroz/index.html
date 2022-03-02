@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Imroz</title>
+    <title>Digital Agency || Imroz Creative Agency</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-    <link rel="shortcut icon" href="#" />
+
+    <link rel="shortcut icon" href="./images/logo-symbol-dark.png" />
 
     <!-- Icon -->
     <link
@@ -716,7 +716,7 @@
             <h4>What is the Difference between Web and Brand.</h4>
           </div>
           <div class="card__content-slideUp">
-            <button class="default-btn">Read More</button>
+            <button class="header-btn">Read More</button>
           </div>
         </div>
         <div class="new__card card">
@@ -728,7 +728,7 @@
             <h4>A big ticket gone to be an interesting look New York.</h4>
           </div>
           <div class="card__content-slideUp">
-            <button class="default-btn">Read More</button>
+            <button class="header-btn">Read More</button>
           </div>
         </div>
         <div class="new__card card">
@@ -778,6 +778,18 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer"></footer>
+    <div class="progress-wrap">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -785,6 +797,14 @@
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+      integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -795,5 +815,48 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      //Scroll back to top
+
+      (function ($) {
+        "use strict";
+
+        $(document).ready(function () {
+          "use strict";
+
+          var progressPath = document.querySelector(".progress-wrap path");
+          var pathLength = progressPath.getTotalLength();
+          progressPath.style.transition = progressPath.style.WebkitTransition =
+            "none";
+          progressPath.style.strokeDasharray = pathLength + " " + pathLength;
+          progressPath.style.strokeDashoffset = pathLength;
+          progressPath.getBoundingClientRect();
+          progressPath.style.transition = progressPath.style.WebkitTransition =
+            "stroke-dashoffset 10ms linear";
+          var updateProgress = function () {
+            var scroll = $(window).scrollTop();
+            var height = $(document).height() - $(window).height();
+            var progress = pathLength - (scroll * pathLength) / height;
+            progressPath.style.strokeDashoffset = progress;
+          };
+          updateProgress();
+          $(window).scroll(updateProgress);
+          var offset = 50;
+          var duration = 550;
+          jQuery(window).on("scroll", function () {
+            if (jQuery(this).scrollTop() > offset) {
+              jQuery(".progress-wrap").addClass("active-progress");
+            } else {
+              jQuery(".progress-wrap").removeClass("active-progress");
+            }
+          });
+          jQuery(".progress-wrap").on("click", function (event) {
+            event.preventDefault();
+            jQuery("html, body").animate({ scrollTop: 0 }, duration);
+            return false;
+          });
+        });
+      })(jQuery);
+    </script>
   </body>
 </html>
