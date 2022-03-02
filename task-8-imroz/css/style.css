@@ -59,6 +59,10 @@ a {
   text-decoration: none !important;
 }
 
+li {
+  list-style: none;
+}
+
 h1 {
   color: white;
   font-size: 10rem;
@@ -119,6 +123,31 @@ p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+
+.footer-text {
+  color: #757575;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.footer-link {
+  position: relative;
+}
+.footer-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 14px;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+  transition: all 0.5s;
+}
+
+.footer-link:hover::after {
+  width: 100%;
 }
 
 header {
@@ -343,6 +372,11 @@ header i.fas {
   background-repeat: no-repeat;
   z-index: -1;
 }
+@media screen and (max-width: 1200px) {
+  .testimonial p::before {
+    display: none;
+  }
+}
 .testimonial p {
   font-size: 3rem;
   line-height: 4.8rem;
@@ -450,6 +484,48 @@ header i.fas {
 
 .footer {
   background-color: #010001;
+  padding: 10rem !important;
+}
+.footer h4 {
+  color: white;
+  font-size: 3rem;
+}
+.footer h5 {
+  color: white;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.footer li {
+  margin-bottom: 1rem;
+}
+.footer__action {
+  border-bottom: 3px solid rgba(29, 29, 36, 0.75);
+  padding-bottom: 3rem;
+}
+.footer__logo {
+  margin-bottom: 5rem;
+}
+.footer__logo img {
+  width: 30%;
+  height: 30%;
+}
+.footer__social {
+  margin-top: 2rem;
+}
+.footer__social i {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.footer__social i:hover {
+  transform: translateY(-1rem);
+  color: #fd4766;
+}
+@media screen and (max-width: 1200px) {
+  .footer .footer__intro {
+    text-align: center;
+  }
 }
 
 .header-btn {
@@ -591,7 +667,7 @@ header i.fas {
   opacity: 0.7;
 }
 .card:hover .card__content-slideUp {
-  top: 80%;
+  top: 82%;
   opacity: 1;
 }
 .card:hover .card__content {

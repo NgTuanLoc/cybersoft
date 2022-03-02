@@ -64,3 +64,34 @@ p {
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
+
+.footer-text {
+  color: #757575;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.footer-link {
+  position: relative;
+  
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 14px;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(
+      120deg,
+      #1c99fe 20.69%,
+      #7644ff 50.19%,
+      $color-primary 79.69%
+    );
+    transition: all 0.5s;
+  }
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
