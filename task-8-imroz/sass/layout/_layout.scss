@@ -16,6 +16,10 @@ header {
 
     a {
       color: white !important;
+      transition: all 1s;
+    }
+    a:hover {
+      color: $color-primary !important;
     }
   }
 
@@ -163,7 +167,7 @@ header {
   }
 }
 
-//  =========== Project  ===========
+//  =========== Project ===========
 .project {
   background-image: url("../../images/bg-image-3.jpg");
   background-size: cover;
@@ -187,6 +191,66 @@ header {
       & {
         grid-gap: 2rem;
         grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+//  =========== Project ===========
+.about {
+  padding: 10rem 10rem;
+  @media screen and (max-width: $breakpoint-mobile) {
+    .row {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 2rem;
+    }
+  }
+  &__image {
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  &__content {
+    .nav-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid $color-border;
+      border-radius: 50em;
+    }
+  }
+
+  i {
+    color: $color-primary;
+  }
+
+  &__nav {
+    .nav-pills {
+      margin: 2rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      background-color: transparent;
+      border: 1px solid $color-gray;
+
+      border-radius: 5rem;
+    }
+
+    .nav-item {
+      background-color: transparent;
+      a {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        color: black;
+        font-weight: 300;
+      }
+
+      .nav-link.active {
+        background-color: $color-primary;
+        padding: 1rem 2rem;
+        border-radius: 5rem;
       }
     }
   }
