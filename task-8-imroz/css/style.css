@@ -35,7 +35,7 @@ h6 {
 }
 
 section {
-  padding: 10rem 10rem;
+  padding: 10rem !important;
 }
 
 img {
@@ -141,7 +141,6 @@ header i.fas {
 
 .carousel {
   width: 100vw;
-  padding: 0;
 }
 .carousel img {
   position: relative;
@@ -280,9 +279,6 @@ header i.fas {
   }
 }
 
-.about {
-  padding: 10rem 10rem;
-}
 .about__image img {
   border-radius: 10px;
 }
@@ -322,7 +318,6 @@ header i.fas {
 .testimonial {
   background-color: #f9f9f9;
   position: relative;
-  padding: 10rem;
 }
 .testimonial p::before {
   position: absolute;
@@ -384,6 +379,34 @@ header i.fas {
 }
 .testimonial .nav-tabs {
   border: none !important;
+}
+
+.new {
+  text-align: center;
+}
+.new__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
+}
+@media screen and (max-width: 1200px) {
+  .new__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .new__content {
+    grid-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.new__card {
+  text-align: left;
+}
+.new__card button {
+  border-radius: 4px;
+  padding: 1rem;
 }
 
 .header-btn {
@@ -490,7 +513,7 @@ header i.fas {
   position: absolute;
   z-index: 2;
   width: 90%;
-  top: 65%;
+  top: 75%;
   left: 50%;
   transform: translateX(-50%);
   transition: all 1s ease, opacity 0.5s ease 0.25s;

@@ -35,7 +35,6 @@ header {
 //  =========== Carousel  ===========
 .carousel {
   width: 100vw;
-  padding: 0;
 
   img {
     position: relative;
@@ -196,10 +195,8 @@ header {
   }
 }
 
-//  =========== Project ===========
+//  =========== About ===========
 .about {
-  padding: 10rem 10rem;
-
   &__image {
     img {
       border-radius: 10px;
@@ -253,7 +250,6 @@ header {
 .testimonial {
   background-color: #f9f9f9;
   position: relative;
-  padding: 10rem;
 
   p::before {
     position: absolute;
@@ -320,7 +316,43 @@ header {
     }
   }
 
-  .nav-tabs{
+  .nav-tabs {
     border: none !important;
   }
 }
+
+//  =========== New ===========
+.new {
+  text-align: center;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+
+    @media screen and (max-width: $breakpoint-tab) {
+      & {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+      }
+    }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      & {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  &__card {
+    text-align: left;
+
+    button {
+      border-radius: 4px;
+      padding: 1rem;
+    }
+  }
+}
+
+//  =========== New ===========
