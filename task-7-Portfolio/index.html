@@ -39,7 +39,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand logo" href="#">
-          <i class="fa fa-dice-d20 fa-2x"></i>
+          <i class="fa fa-dice-d20 fa-3x"></i>
           <span>My Portfolio</span>
         </a>
 
@@ -74,12 +74,13 @@
     </header>
 
     <!-- Carousel  -->
-    <div
+    <section
       id="demo"
       class="carousel slide"
       data-ride="carousel"
       data-interval="10000"
       data-pause="false"
+      style="padding: 0"
     >
       <!-- Indicators -->
       <ul class="carousel-indicators">
@@ -93,7 +94,9 @@
         <div class="overlay"></div>
         <div class="carousel-item active">
           <div class="carousel-caption">
-            <div class="carousel__thumb animate__animated animate__fadeInUp">
+            <div
+              class="carousel__thumb animate__animated animate__fadeInUp mb-4"
+            >
               <img src="./images/01-3.jpg" alt="" />
             </div>
             <h3 class="animate__animated animate__fadeInUp animate__delay-1s">
@@ -106,7 +109,9 @@
         </div>
         <div class="carousel-item">
           <div class="carousel-caption">
-            <div class="carousel__thumb animate__animated animate__fadeInUp">
+            <div
+              class="carousel__thumb animate__animated animate__fadeInUp mb-4"
+            >
               <img src="./images/02-3.jpg" alt="" />
             </div>
             <h3 class="animate__animated animate__fadeInUp animate__delay-1">
@@ -119,7 +124,9 @@
         </div>
         <div class="carousel-item">
           <div class="carousel-caption">
-            <div class="carousel__thumb animate__animated animate__fadeInUp">
+            <div
+              class="carousel__thumb animate__animated animate__fadeInUp mb-4"
+            >
               <img src="./images/03-3.jpg" alt="" />
             </div>
             <h3 class="animate__animated animate__fadeInUp animate__delay-1s">
@@ -139,7 +146,359 @@
       <a class="carousel-control-next" href="#demo" data-slide="next">
         <span class="carousel-control-next-icon"></span>
       </a> -->
-    </div>
+    </section>
+
+    <section class="projects py-5">
+      <div class="container py-5">
+        <div class="heading text-center mx-auto">
+          <h2 style="color: black">I Love What I Do</h2>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.Vestibulum ante ipsum
+            primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Nulla mollis dapibus nunc
+          </p>
+        </div>
+        <div class="projects__content pt-3">
+          <ul
+            class="nav nav-pills justify-content-center mb-4"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="pills-tab1"
+                data-toggle="pill"
+                href="#pills-all"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+                >All Projects</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="pills-tab2"
+                data-toggle="pill"
+                href="#pills-illu"
+                role="tab"
+                aria-controls="pills-illu"
+                aria-selected="false"
+                >Illustration</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="pills-tab3"
+                data-toggle="pill"
+                href="#pills-photo"
+                role="tab"
+                aria-controls="pills-photo"
+                aria-selected="false"
+                >Photography</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="pills-tab4"
+                data-toggle="pill"
+                href="#pills-web"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+                >Website</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="projectTabs">
+            <div
+              class="tab-pane fade show active"
+              id="pills-all"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card projects__item animate__animated animate__zoomIn"
+                  >
+                    <img src="./images/g1.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h3 class="h5">Apologetic robot holding flowers</h3>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card projects__item animate__animated animate__zoomIn"
+                  >
+                    <img src="./images/g2.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h3 class="h5">Woman walking her small dog</h3>
+                      <p>Illustrations</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card projects__item animate__animated animate__zoomIn"
+                  >
+                    <img src="./images/g3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h3 class="h5">Oil bottle branding</h3>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card projects__item animate__animated animate__zoomIn"
+                  >
+                    <img src="./images/g4.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h3 class="h5">Smiling Woman</h3>
+                      <p>Illustrations</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card projects__item animate__animated animate__zoomIn"
+                  >
+                    <img src="./images/g5.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h3 class="h5">Drink can design</h3>
+                      <p>Packaging</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card projects__item animate__animated animate__zoomIn"
+                  >
+                    <img src="./images/g6.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h3 class="h5">I love you hand gesture</h3>
+                      <p>Illustrations</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-illu"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card projects__item animate__animated animate__zoomIn"
+                  >
+                    <img src="./images/g1.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h3 class="h5">Apologetic robot holding flowers</h3>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card projects__item animate__animated animate__zoomIn"
+                  >
+                    <img src="./images/g2.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h3 class="h5">Woman walking her small dog</h3>
+                      <p>Illustrations</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card projects__item animate__animated animate__zoomIn"
+                  >
+                    <img src="./images/g3.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h3 class="h5">Oil bottle branding</h3>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-photo"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+            >
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card projects__item animate__animated animate__zoomIn"
+                  >
+                    <img src="./images/g4.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h3 class="h5">Oil bottle branding</h3>
+                      <p>Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card projects__item animate__animated animate__zoomIn"
+                  >
+                    <img src="./images/g5.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h3 class="h5">Smiling Woman</h3>
+                      <p>Illustrations</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-web"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+            >
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                  <div
+                    class="card projects__item animate__animated animate__zoomIn"
+                  >
+                    <img src="./images/g6.jpg" class="card-img-top" alt="..." />
+                    <div class="card-body text-center">
+                      <h3 class="h5">I love you hand gesture</h3>
+                      <p>Illustrations</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="overlay" style="margin: -60px -40px"></div>
+      <div class="container m4" style="position: relative; z-index: 3">
+        <div class="feature__title text-center mx-auto">
+          <h2 class="text-white">I'm Available For Hire</h2>
+          <p class="my-3 text-white">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="feature__content text-center mt-5 pt-3">
+          <div class="row">
+            <div class="col-md-4 mb-md-0">
+              <div class="feature__item">
+                <i class="fa fa-paint-brush"></i>
+                <h3>Design</h3>
+                <p>
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Nulla mollis dapibus nunc
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0">
+              <div class="feature__item">
+                <i class="fa fa-shekel-sign"></i>
+                <h3>Marketing</h3>
+                <p>
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Nulla mollis dapibus nunc
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0">
+              <div class="feature__item">
+                <i class="fa fa-camera"></i>
+                <h3>Photography</h3>
+                <p>
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Nulla mollis dapibus nunc
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="award">
+      <div class="award-bg"></div>
+      .
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="award__left">
+              <h2>Our Achievement and Award</h2>
+              <p class="my-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="award__right">
+              <p>
+                Luctus porta semper aptent morbi. Vestibulum lectus tempus augue
+                dictumst enim commodo facilisis. Mus laoreet scelerisque
+                habitant urna dui sem diam. Purus dis nam eget. Scelerisque
+                placerat lectus lorem etiam. Elementum integer phasellus lectus.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img class="img-fluid" src="./images/award-1.png" alt="" />
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./images/award-2.png" alt="" />
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./images/award-3.png" alt="" />
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./images/award-4.png" alt="" />
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./images/award-5.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="container text-center text-while">
+        <div class="footer__main">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer__copies">
+          <p>
+            &copy; 2022 NgTuanLoc. All rights reserved | Designed by
+            <a href="#">CyberSoft</a>
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
