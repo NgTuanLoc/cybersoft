@@ -1,0 +1,37 @@
+.header {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  .navbar-light .navbar-brand {
+    font-size: 2.5rem;
+    color: $primary;
+  }
+
+  & .nav-item .nav-link:not(.primary-btn) {
+    color: black;
+    position: relative;
+    margin: 0 1rem;
+
+    &.active {
+      color: $primary;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 3px;
+      left: 0.5rem;
+      width: 0;
+      height: 3px;
+      background-color: $primary;
+      transition: $transition;
+    }
+
+    &:hover::before {
+      width: 3rem;
+    }
+  }
+}

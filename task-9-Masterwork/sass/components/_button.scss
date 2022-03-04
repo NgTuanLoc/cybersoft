@@ -1,0 +1,15 @@
+.nav-item .nav-link.primary-btn {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: $primary;
+  border: 1px solid $primary;
+  border-radius: $border-radius;
+  padding: 1rem 2rem;
+  transition: $transition;
+
+  &:hover{
+      background-color: $primary;
+      color: white;
+  }
+}
