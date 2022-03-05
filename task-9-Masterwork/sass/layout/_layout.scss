@@ -1,3 +1,4 @@
+// ======= Header - Navbar =======
 .header {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
   position: fixed;
@@ -13,7 +14,7 @@
   & .nav-item .nav-link:not(.primary-btn) {
     color: black;
     position: relative;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 
     &.active {
       color: $primary;
@@ -32,6 +33,61 @@
 
     &:hover::before {
       width: 3rem;
+    }
+  }
+}
+
+// ======= About =======
+.about {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: #ffffff;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: none;
+  background-size: auto;
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
+    url("../../images/banner.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  padding-top: 5rem;
+
+  &__image {
+    transform: rotate(180deg);
+  }
+}
+
+// ======= Testimonial =======
+.testimonial {
+  background-color: white;
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  
+  img {
+    width: 20%;
+    margin-bottom: 2rem;
+  }
+
+  &__card {
+    background-color: $light-bg-color;
+    border-radius: 15px;
+    padding: 4.5rem 2rem;
+    margin: 2rem 1.5rem;
+    transition: 0.3s ease-in;
+
+    &:hover {
+      background-color: #ffffff;
+      border: 1px solid #eee;
+      box-shadow: $card-hover-box-shadow;
+      transform: $transformY;
     }
   }
 }

@@ -20,22 +20,25 @@
     <title>Masterwork</title>
   </head>
   <body>
-    <header class="container-fluid p-0 header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <header class="container-fluid p-0 header fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white stroke">
         <div class="container-fluid px-5">
           <a class="navbar-brand" href="#">
             <i class="fa-solid fa-handshake"></i> Masterwork</a
           >
           <button
-            class="navbar-toggler"
+            class="navbar-toggler p-1"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style="background-color: #dc4f72"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">
+              <i class="fas fa-bars" style="color: #fff; font-size: 20px"></i
+            ></span>
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
@@ -76,7 +79,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ms-2">
                 <a class="nav-link primary-btn" href="#">ScheduleA Demo</a>
               </li>
             </ul>
@@ -85,6 +88,80 @@
       </nav>
     </header>
 
+    <!-- ABOUT -->
+    <section class="about container-fluid px-5">
+      <div class="row pt-5">
+        <div
+          class="col-lg-6 d-flex align-items-start flex-column justify-content-center text-start"
+        >
+          <h2>We Execute Our Ideas From Start to Finish</h2>
+          <p>
+            Building a beautiful interactive business for <br />
+            startups and innovative companies.
+          </p>
+          <a class="primary-btn" href="#">Get Started</a>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end align-items-end">
+          <div class="about__image">
+            <img src="./images/main.png" alt="about image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial container-fluid py-4">
+      <div class="testimonial__text col-lg-8 mx-auto text-center">
+        <h4 class="sub-title">Why choose us</h4>
+        <h3>
+          Tools for business startup to <br />
+          professional
+        </h3>
+        <p>
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Nulla mollis <br />
+          dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis
+          quam.
+        </p>
+      </div>
+      <div class="testimonial__content container-fluid px-5 mt-4">
+        <div class="row gx-5">
+          <div class="testimonial__card col-lg text-center col-sm-12">
+            <div class="testimonial__image">
+              <img src="./images/s1.png" alt="testimonial 1" />
+            </div>
+            <h3>Interactive</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Laudantium tempora 
+              rerum perspiciatis?
+            </p>
+          </div>
+          <div class="testimonial__card col-lg text-center col-sm-12">
+            <div class="testimonial__image">
+              <img src="./images/s2.png" alt="testimonial 1" />
+            </div>
+            <h3>Business</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Laudantium tempora 
+              rerum perspiciatis?
+            </p>
+          </div>
+          <div class="testimonial__card col-lg text-center col-sm-12">
+            <div class="testimonial__image">
+              <img src="./images/s3.png" alt="testimonial 1" />
+            </div>
+            <h3>Inspiration</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Laudantium tempora 
+              rerum perspiciatis?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

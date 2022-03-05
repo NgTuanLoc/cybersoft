@@ -4,3 +4,32 @@ a {
   list-style: none !important;
   text-decoration: none !important;
 }
+
+h2 {
+  font-size: 5rem;
+  line-height: 57.5px;
+  color: $title-color;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 4rem;
+  color: $title-color;
+  font-weight: 700;
+}
+
+.sub-title {
+  font-size: 1.6rem;
+  line-height: 20px;
+  font-weight: 700;
+  color: $primary;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: $text-color;
+  font-size: 1.8rem;
+  line-height: 28px;
+  font-weight: 400;
+}
