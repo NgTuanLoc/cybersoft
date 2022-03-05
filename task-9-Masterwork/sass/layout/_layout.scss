@@ -294,3 +294,52 @@
     font-size: 2.5rem;
   }
 }
+
+// ======= Testimonial =======
+.testimonial {
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(247, 249, 252, 0.77),
+      rgba(247, 249, 252, 0.77)
+    ),
+    url("../../images/b2.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  .carousel-item {
+    background-color: transparent;
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    top: 105%;
+  }
+
+  .carousel-indicators button {
+    color: white;
+    height: 5px;
+  }
+
+  .carousel-indicators button.active {
+    background-color: $primary;
+  }
+
+  &__card {
+    background-color: white;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    border-radius: $card-curve;
+    box-shadow: $box-shadow;
+
+    i {
+      font-size: 4rem;
+      color: #d4d4d6;
+    }
+
+    .sub-title {
+      font-weight: 400;
+    }
+  }
+}

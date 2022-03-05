@@ -11129,6 +11129,7 @@ textarea.form-control-lg {
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 img {
@@ -11164,6 +11165,12 @@ h3, .h3 {
   color: #dc4f72;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
+}
+
+.sub-text {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #5a5a5a;
 }
 
 p {
@@ -11418,6 +11425,43 @@ p {
   font-size: 2.5rem;
 }
 
+.testimonial {
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(247, 249, 252, 0.77), rgba(247, 249, 252, 0.77)), url("../../images/b2.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.testimonial .carousel-item {
+  background-color: transparent;
+}
+.testimonial .carousel-indicators {
+  position: absolute;
+  top: 105%;
+}
+.testimonial .carousel-indicators button {
+  color: white;
+  height: 5px;
+}
+.testimonial .carousel-indicators button.active {
+  background-color: #dc4f72;
+}
+.testimonial__card {
+  background-color: white;
+  padding: 2.5rem;
+  margin: 2rem 0;
+  border-radius: 6px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.testimonial__card i {
+  font-size: 4rem;
+  color: #d4d4d6;
+}
+.testimonial__card .sub-title {
+  font-weight: 400;
+}
+
 .nav-item .nav-link.primary-btn {
   font-size: 2rem;
   font-weight: 400;
@@ -11513,6 +11557,16 @@ p {
 img.img-curve {
   border-radius: 6px;
   transition: 0.3s ease-in-out;
+}
+
+.img-circle {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  overflow: hidden;
+  background: #f3f6f9;
+  border-radius: 50%;
+  border: 3px solid #dc4f72;
 }
 
 /*# sourceMappingURL=style.css.map */
