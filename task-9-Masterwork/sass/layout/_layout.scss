@@ -164,3 +164,51 @@
     background-color: white;
   }
 }
+
+// ======= Solution =======
+.solution {
+  background-color: white;
+
+  .card-body {
+    padding: 2rem;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    color: black;
+  }
+
+  &__card {
+    margin: 1rem 2rem;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      .solution__heading {
+        color: $primary;
+      }
+      box-shadow: $card-hover-box-shadow;
+      transform: $transformY;
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  &__btn {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    position: relative;
+    span {
+      font-size: 60%;
+      transition: all 0.3s ease-in-out;
+      position: absolute;
+      top: 7px;
+    }
+    &:hover span {
+      transform: translateX(0.5rem);
+    }
+  }
+}
