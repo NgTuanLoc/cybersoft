@@ -343,3 +343,70 @@
     }
   }
 }
+
+// ======= Footer =======
+.footer {
+  background-color: $light-bg-color;
+
+  h5 {
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+
+  & ul li a {
+    color: #656f7b;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0;
+    text-transform: capitalize;
+    transition: $transition;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &__form {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: $card-curve;
+    box-shadow: $card-box-shadow;
+
+    h4 {
+      font-size: 1.8rem;
+      line-height: 25px;
+      color: title-color;
+      margin-bottom: 3rem;
+      font-weight: 500;
+    }
+
+    form {
+      display: flex;
+      margin-bottom: 1.5rem;
+    }
+
+    input {
+      background: $light-bg-color;
+      border: none;
+      padding: 1.2rem 2rem;
+      font-size: 1.6rem;
+      outline: none;
+      width: 78%;
+      color: $title-color;
+      font-weight: 600;
+      border-radius: $card-curve;
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid #eaeaea;
+
+    li {
+      margin: 0 3rem;
+    }
+    .fa {
+      font-size: 3rem;
+    }
+  }
+}

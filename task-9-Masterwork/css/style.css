@@ -11462,6 +11462,63 @@ p {
   font-weight: 400;
 }
 
+.footer {
+  background-color: #f7f9fc;
+}
+.footer h5, .footer .h5 {
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+.footer ul li a {
+  color: #656f7b;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 0;
+  text-transform: capitalize;
+  transition: all 0.8s;
+}
+.footer ul li a:hover {
+  color: #dc4f72;
+}
+.footer__form {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 6px;
+  box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+}
+.footer__form h4, .footer__form .h4 {
+  font-size: 1.8rem;
+  line-height: 25px;
+  color: title-color;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+.footer__form form {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.footer__form input {
+  background: #f7f9fc;
+  border: none;
+  padding: 1.2rem 2rem;
+  font-size: 1.6rem;
+  outline: none;
+  width: 78%;
+  color: #2c3038;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.footer__copyright {
+  border-top: 1px solid #eaeaea;
+}
+.footer__copyright li {
+  margin: 0 3rem;
+}
+.footer__copyright .fa {
+  font-size: 3rem;
+}
+
 .nav-item .nav-link.primary-btn {
   font-size: 2rem;
   font-weight: 400;
@@ -11560,8 +11617,10 @@ img.img-curve {
 }
 
 .img-circle {
-  width: 100px;
-  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
   display: inline-block;
   overflow: hidden;
   background: #f3f6f9;
