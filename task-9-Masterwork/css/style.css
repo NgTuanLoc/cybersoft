@@ -11354,6 +11354,25 @@ p {
   transform: translateX(0.5rem);
 }
 
+.faq {
+  background-color: #f7f9fc;
+}
+.faq__image {
+  transition: all 0.8s;
+}
+.faq__image:hover {
+  transform: translateY(-0.5rem);
+}
+.faq .accordion-item {
+  margin-bottom: 1rem;
+}
+.faq .accordion-item .accordion-header .accordion-button {
+  font-size: 2rem;
+}
+.faq .accordion-item .accordion-body {
+  font-size: 1.5rem;
+}
+
 .nav-item .nav-link.primary-btn {
   font-size: 2rem;
   font-weight: 400;
@@ -11440,6 +11459,15 @@ p {
 .tag.purple-tag {
   background: rgba(0, 0, 255, 0.2);
   color: #0000ff;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+img.img-curve {
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

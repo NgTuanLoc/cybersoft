@@ -212,3 +212,27 @@
     }
   }
 }
+
+// ======= faq =======
+.faq {
+  background-color: $light-bg-color;
+
+  &__image {
+    transition: $transition;
+
+    &:hover {
+      transform: $transformY;
+    }
+  }
+
+  & .accordion-item {
+    margin-bottom: 1rem;
+
+    & .accordion-header .accordion-button {
+      font-size: 2rem;
+    }
+    & .accordion-body {
+      font-size: 1.5rem;
+    }
+  }
+}
