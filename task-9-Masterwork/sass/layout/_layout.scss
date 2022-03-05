@@ -70,9 +70,8 @@
     font-size: 2.5rem;
   }
 
-  
   img {
-    width: 20%;
+    max-width: 8rem;
     margin-bottom: 2rem;
   }
 
@@ -85,6 +84,48 @@
 
     &:hover {
       background-color: #ffffff;
+      border: 1px solid #eee;
+      box-shadow: $card-hover-box-shadow;
+      transform: $transformY;
+    }
+  }
+}
+
+// ======= Intro =======
+.intro {
+  background-color: $light-bg-color;
+
+  &__image {
+    margin-top: 4rem;
+    border-radius: $card-curve;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transform: $transformY;
+    }
+  }
+
+  &__card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 4.5rem 2rem;
+    margin: 2rem 1.5rem;
+    transition: 0.3s ease-in;
+
+    h6 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    h5 {
+      color: $primary;
+      font-size: 4.5rem;
+      font-weight: bold;
+    }
+
+    &:hover {
       border: 1px solid #eee;
       box-shadow: $card-hover-box-shadow;
       transform: $transformY;

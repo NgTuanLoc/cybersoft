@@ -11237,7 +11237,7 @@ p {
   font-size: 2.5rem;
 }
 .testimonial img {
-  width: 20%;
+  max-width: 8rem;
   margin-bottom: 2rem;
 }
 .testimonial__card {
@@ -11249,6 +11249,41 @@ p {
 }
 .testimonial__card:hover {
   background-color: #ffffff;
+  border: 1px solid #eee;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  transform: translateY(-0.5rem);
+}
+
+.intro {
+  background-color: #f7f9fc;
+}
+.intro__image {
+  margin-top: 4rem;
+  border-radius: 6px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  transition: 0.3s ease-in-out;
+}
+.intro__image:hover {
+  transform: translateY(-0.5rem);
+}
+.intro__card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 4.5rem 2rem;
+  margin: 2rem 1.5rem;
+  transition: 0.3s ease-in;
+}
+.intro__card h6, .intro__card .h6 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.intro__card h5, .intro__card .h5 {
+  color: #dc4f72;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+.intro__card:hover {
   border: 1px solid #eee;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
   transform: translateY(-0.5rem);
@@ -11282,6 +11317,23 @@ p {
 .primary-btn:hover {
   background-color: #dc4f72;
   color: white;
+}
+
+.secondary-btn {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  background-color: #dc4f72;
+  color: white;
+  border: 1px solid #dc4f72;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  transition: all 0.8s;
+}
+.secondary-btn:hover {
+  color: white;
+  background-color: #d62f58;
+  border-color: #cf2952;
 }
 
 /*# sourceMappingURL=style.css.map */
