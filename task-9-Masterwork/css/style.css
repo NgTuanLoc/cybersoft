@@ -11230,24 +11230,24 @@ p {
   transform: rotate(180deg);
 }
 
-.testimonial {
+.business {
   background-color: white;
 }
-.testimonial h3, .testimonial .h3 {
+.business h3, .business .h3 {
   font-size: 2.5rem;
 }
-.testimonial img {
+.business img {
   max-width: 8rem;
   margin-bottom: 2rem;
 }
-.testimonial__card {
+.business__card {
   background-color: #f7f9fc;
   border-radius: 15px;
   padding: 4.5rem 2rem;
   margin: 2rem 1.5rem;
   transition: 0.3s ease-in;
 }
-.testimonial__card:hover {
+.business__card:hover {
   background-color: #ffffff;
   border: 1px solid #eee;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
@@ -11287,6 +11287,29 @@ p {
   border: 1px solid #eee;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
   transform: translateY(-0.5rem);
+}
+
+.stats {
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../../images/bg.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 480px;
+  display: grid;
+  align-items: center;
+}
+.stats h4, .stats .h4 {
+  font-size: 3rem;
+  color: white;
+}
+.stats p {
+  font-size: 1.5rem;
+  color: #eee;
+}
+.stats btn {
+  color: black;
+  background-color: white;
 }
 
 .nav-item .nav-link.primary-btn {
@@ -11334,6 +11357,23 @@ p {
   color: white;
   background-color: #d62f58;
   border-color: #cf2952;
+}
+
+.secondary-white-btn {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  background-color: #f8f9fa;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  transition: all 0.8s;
+}
+.secondary-white-btn:hover {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
 }
 
 /*# sourceMappingURL=style.css.map */

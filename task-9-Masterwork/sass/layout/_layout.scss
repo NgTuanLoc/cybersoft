@@ -63,8 +63,8 @@
   }
 }
 
-// ======= Testimonial =======
-.testimonial {
+// ======= Business =======
+.business {
   background-color: white;
   h3 {
     font-size: 2.5rem;
@@ -130,5 +130,37 @@
       box-shadow: $card-hover-box-shadow;
       transform: $transformY;
     }
+  }
+}
+
+// ======= Stats =======
+.stats {
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.33)
+    ),
+    url(../../images/bg.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 480px;
+  display: grid;
+  align-items: center;
+
+  h4 {
+    font-size: 3rem;
+    color: white;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: #eee;
+  }
+
+  btn {
+    color: black;
+    background-color: white;
   }
 }
