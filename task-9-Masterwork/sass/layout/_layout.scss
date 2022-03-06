@@ -314,7 +314,7 @@
 
   .carousel-indicators {
     position: absolute;
-    top: 105%;
+    top: 103%;
   }
 
   .carousel-indicators button {
@@ -384,6 +384,11 @@
     form {
       display: flex;
       margin-bottom: 1.5rem;
+
+      .secondary-btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
     }
 
     input {
@@ -395,7 +400,8 @@
       width: 78%;
       color: $title-color;
       font-weight: 600;
-      border-radius: $card-curve;
+      border-top-left-radius: $card-curve;
+      border-bottom-left-radius: $card-curve;
     }
   }
 
@@ -405,7 +411,7 @@
     li {
       margin: 0 3rem;
     }
-    .fa {
+    .fa-brands {
       font-size: 3rem;
     }
   }

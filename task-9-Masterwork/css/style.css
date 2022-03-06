@@ -11438,7 +11438,7 @@ p {
 }
 .testimonial .carousel-indicators {
   position: absolute;
-  top: 105%;
+  top: 103%;
 }
 .testimonial .carousel-indicators button {
   color: white;
@@ -11498,6 +11498,10 @@ p {
   display: flex;
   margin-bottom: 1.5rem;
 }
+.footer__form form .secondary-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 .footer__form input {
   background: #f7f9fc;
   border: none;
@@ -11507,7 +11511,8 @@ p {
   width: 78%;
   color: #2c3038;
   font-weight: 600;
-  border-radius: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 .footer__copyright {
   border-top: 1px solid #eaeaea;
@@ -11515,7 +11520,7 @@ p {
 .footer__copyright li {
   margin: 0 3rem;
 }
-.footer__copyright .fa {
+.footer__copyright .fa-brands {
   font-size: 3rem;
 }
 
