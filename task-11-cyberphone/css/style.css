@@ -11206,6 +11206,11 @@ header .nav-item .active::after {
   transform: scaleX(1);
 }
 
+@media screen and (max-width: 991.98px) {
+  header #phoneNavbar .nav-link {
+    text-align: center;
+  }
+}
 .carousel {
   background-image: url("../../images/product-header-bg.jpg");
   background-size: cover;
@@ -11231,6 +11236,21 @@ header .nav-item .active::after {
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 991.98px) {
+  .phoneCarousel {
+    padding: 150px 0;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .phoneCarousel h1, .phoneCarousel .h1 {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .phoneCarousel {
+    padding: 100px 0;
+  }
+}
 .products {
   background-color: #f5f9fe;
 }
@@ -11238,6 +11258,28 @@ header .nav-item .active::after {
   color: #121212;
   font-size: 2.95rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 575.98px) {
+  .products {
+    width: 90%;
+  }
+}
+.footerPhone {
+  background-color: #2a73dd;
+  padding-bottom: 60px;
+  color: #fff;
+}
+.footerPhone img {
+  margin-bottom: 60px;
+}
+.footerPhone .nav-link {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.footerPhone .nav-link:hover {
+  opacity: 0.75;
 }
 
 .btnPhone-white {
