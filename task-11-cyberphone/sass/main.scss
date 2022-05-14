@@ -1,11 +1,7 @@
-@import "base/base";
-@import "base/typography";
-@import "base/utillities";
+@import "./helpers/variable";
 
-@import "abstracts/variables";
-@import "abstracts/animate";
+@import "./helpers/mixin";
 
-@import "layout/layout";
+@import "./base/reset";
 
-@import "components/button";
-@import "components/links";
+@import "./layouts/header";
