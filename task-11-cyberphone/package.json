@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "animate.js": "^2.0.2",
+    "bootstrap": "^5.1.3",
     "wow.js": "^1.2.2"
   }
 }

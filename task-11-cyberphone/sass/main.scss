@@ -1,7 +1,12 @@
 @import "./helpers/variable";
 
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 @import "./helpers/mixin";
 
 @import "./base/reset";
 
 @import "./layouts/header";
+@import "./layouts/carousel";
+
+@import "./components/button";

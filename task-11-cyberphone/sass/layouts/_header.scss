@@ -9,6 +9,12 @@ header {
     @include styleText($color-blue-2, $fs-3, $fw-3);
   }
 
+  .navbar-toggler-icon {
+    i {
+      font-size: 2rem;
+    }
+  }
+
   .nav-item {
     margin: 0 1rem;
     transition: 0.2s;

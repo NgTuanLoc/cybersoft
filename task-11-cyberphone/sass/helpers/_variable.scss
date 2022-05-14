@@ -66,12 +66,12 @@ $breakpoints: (
   "small-down": 575.98px,
 );
 
-$spacer: 10rem;
+$spacer: 3rem;
 $spacers: (
   0: 0,
   1: $spacer * 0.25,
   2: $spacer * 0.5,
   3: $spacer,
   4: $spacer * 1.5,
-  5: $spacer * 3,
+  5: $spacer * 5,
 );
