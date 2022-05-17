@@ -25,8 +25,26 @@
     <title>CyberPhone</title>
   </head>
   <body>
+    <!-- SIDEBAR MINI -->
+    <div class="sidebarMini">
+      <button class="sidebarMini__button">
+        <i class="fa fa-cog"></i>
+      </button>
+      <div class="sidebarMini__content">
+        <h2>Choose Mode</h2>
+        <div class="d-flex">
+          <span>Light</span>
+          <label class="switch" for="checkbox">
+            <input type="checkbox" name="" id="checkbox" />
+            <div class="slider"></div>
+          </label>
+          <span>Dark</span>
+        </div>
+      </div>
+    </div>
+
     <header class="px-lg-5 py-lg-1 px-md-1 px-0">
-      <nav class="navbar navbar-expand-lg bg-light container">
+      <nav class="navbar navbar-expand-lg container">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">CyberPhone</a>
           <button
@@ -289,10 +307,15 @@
       </div>
     </section>
 
-    <footer class="footerPhone">
+    <footer class="footer-phone">
       <img
         class="img-fluid footer__light"
         src="./images/angle-up-light.svg"
+        alt=""
+      />
+      <img
+        class="img-fluid footer__dark"
+        src="./images/angle-up-dark.png"
         alt=""
       />
 
@@ -323,5 +346,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

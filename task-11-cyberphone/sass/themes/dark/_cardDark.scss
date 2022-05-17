@@ -1,0 +1,16 @@
+.darkMode {
+  .card-phone {
+    box-shadow: none;
+    background-color: $color-dark-4;
+    img {
+      box-shadow: none;
+    }
+
+    .card-body {
+      h3,
+      p {
+        color: $color-blue-4;
+      }
+    }
+  }
+}

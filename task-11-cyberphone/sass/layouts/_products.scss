@@ -1,13 +1,5 @@
 .products {
-  background-color: $color-white-1;
-
   &--title {
     @include styleText($color-dark-2, $fs-6, $fw-2);
-  }
-}
-
-@include responsive("small-down") {
-  .products {
-    width: 90%;
   }
 }

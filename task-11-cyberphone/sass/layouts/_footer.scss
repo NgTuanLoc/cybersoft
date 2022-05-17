@@ -1,4 +1,4 @@
-.footerPhone {
+.footer-phone {
   background-color: $color-blue-2;
   padding-bottom: $pd-7;
   color: $color-white-3;
@@ -7,9 +7,15 @@
     margin-bottom: $mg-4;
   }
   .nav-link {
-    @include styleText($color-white-3, $fs-3, $fw-2);
+    @include styleText($color-white-3, $fs-2, $fw-2);
     &:hover {
       opacity: 0.75;
     }
+  }
+  .footer__light {
+    display: block;
+  }
+  .footer__dark {
+    display: none;
   }
 }
