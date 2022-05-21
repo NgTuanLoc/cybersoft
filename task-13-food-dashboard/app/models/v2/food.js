@@ -7,8 +7,7 @@ class Food {
     _discount,
     _condition,
     _image,
-    _description,
-    _discountedPrice
+    _description
   ) {
     this.id = _id;
     this.name = _name;
