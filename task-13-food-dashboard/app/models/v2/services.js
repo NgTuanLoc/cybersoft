@@ -22,6 +22,21 @@ class Services {
       data: data,
     });
   }
+
+  getFoodById(id) {
+    return axios({
+      url: `${URL}/${id}`,
+      method: "GET",
+    });
+  }
+
+  editItemById(data) {
+    return axios({
+      url: `${URL}/${data.id}`,
+      method: "PUT",
+      data: data,
+    });
+  }
 }
 
 export default Services;

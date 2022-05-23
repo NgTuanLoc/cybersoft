@@ -5,7 +5,7 @@ const services = new Services();
 
 const getHTMLElement = (id) => document.getElementById(id);
 
-const clearInput = () => {
+const clearModalInput = () => {
   getHTMLElement("tenMon").value = "";
   getHTMLElement("loai").value = "";
   getHTMLElement("giaMon").value = "";
@@ -21,14 +21,22 @@ const renderHTML = (data) => {
       <tr>
         <td>${item.id}</td>
         <td>${item.name}</td>
-        <td>${item.kind}</td>
+        <td>
+        <img src="./../../../assets/img/${item.image}"/>
+        </td>
+        <td>${item.kind === "loai1" ? "Chay" : "Mặn"}</td>
         <td>${item.price}</td>
         <td>${item.discount}</td>
         <td>${item.discountedPrice}</td>
-        <td>${item.condition}</td>
+        <td>${item.condition === "1" ? "Hết" : "Còn"}</td>
         <td>
-            <button class="btn btn-info">Edit</button>
-            <button class="btn btn-danger" onclick="deleteItem(${item.id})">Delete</button>
+            <button class="btn btn-info" onclick="openEditModalById(${
+              item.id
+            })" data-toggle="modal"
+            data-target="#exampleModal">Edit</button>
+            <button class="btn btn-danger" onclick="deleteItem(${
+              item.id
+            })">Delete</button>
         </td>
       </tr>
       `);
@@ -61,6 +69,10 @@ const deleteItem = (id) => {
 window.deleteItem = deleteItem;
 
 // Add Item
+getHTMLElement("btnThem").addEventListener("click", () => {
+  getHTMLElement("btnCapNhat").classList.add("d-none");
+});
+
 const addItem = () => {
   getHTMLElement("btnThemMon").addEventListener("click", () => {
     const name = getHTMLElement("tenMon").value;
@@ -71,7 +83,7 @@ const addItem = () => {
 
     let image = "";
 
-    if (getHTMLElement("hinhMon").files[0].name.length > 0) {
+    if (getHTMLElement("hinhMon").files.length > 0) {
       image = getHTMLElement("hinhMon").files[0].name;
     }
     const description = getHTMLElement("moTa").value;
@@ -97,8 +109,78 @@ const addItem = () => {
       .catch((error) => {
         console.log(error);
       });
-    clearInput();
+    clearModalInput();
   });
 };
 
 window.addItem = addItem;
+
+// Edit Item
+const openEditModalById = (id) => {
+  getHTMLElement("exampleModalLabel").innerHTML = "Sửa Món Ăn";
+  getHTMLElement("btnThemMon").classList.add("d-none");
+
+  services
+    .getFoodById(id)
+    .then((result) => {
+      const { id, name, kind, price, discount, condition, image, description } =
+        result.data;
+
+      getHTMLElement("btnCapNhat").setAttribute(
+        "onclick",
+        `editItem(${id},"${image}")`
+      );
+      getHTMLElement("foodID").value = id;
+      getHTMLElement("tenMon").value = name;
+      getHTMLElement("loai").value = kind;
+      getHTMLElement("giaMon").value = price;
+      getHTMLElement("khuyenMai").value = discount;
+      getHTMLElement("tinhTrang").value = condition;
+      getHTMLElement("moTa").value = description;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
+window.openEditModalById = openEditModalById;
+
+const editItem = async (id, previousImage = "") => {
+  const name = getHTMLElement("tenMon").value;
+  const kind = getHTMLElement("loai").value;
+  const price = getHTMLElement("giaMon").value;
+  const discount = getHTMLElement("khuyenMai").value;
+  const condition = getHTMLElement("tinhTrang").value;
+
+  let image = previousImage;
+
+  if (getHTMLElement("hinhMon").files.length > 0) {
+    image = getHTMLElement("hinhMon").files[0].name;
+  }
+  const description = getHTMLElement("moTa").value;
+
+  const food = new Food(
+    id,
+    name,
+    kind,
+    price,
+    discount,
+    condition,
+    image,
+    description
+  );
+  food.calculateDiscountedPrice();
+
+  const result = await services.getFoodById(id);
+  if (!food.hinhMon) {
+    //Nạp lại hình món cũ vào food.hinhMon
+    food.hinhMon = result.data.hinhMon;
+  }
+  const data = await services.editItemById(food);
+  if (data.status === 200) {
+    document.getElementsByClassName("close")[0].click();
+    getFoodList();
+  }
+  clearModalInput();
+};
+
+window.editItem = editItem;
