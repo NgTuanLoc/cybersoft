@@ -28,9 +28,7 @@ const renderHTML = (data) => {
                     <li key=${item.id}>
                         ${item.title}
                         <div class="buttons" key=${item.id}>
-                        <button class="remove" onclick="deleteTodo(${item.id})"><i class="far fa-trash-alt"></i></button>
-                        
-                        
+                        <button class="remove" onclick="deleteTodo(${item.id})"><i class="far fa-trash-alt"></i></button>    
                         <button class = "complete" onclick="updateCheck(${i},true)"><i class="far fa-check-circle"></i></button>
                         </div>
                     </li>
@@ -39,8 +37,7 @@ const renderHTML = (data) => {
   });
   data.forEach((item, i) => {
     if (item.isDone == true) {
-      contentTrue += `
-            
+      contentTrue += `            
                 <li>
                     ${item.title}
                         <div class="buttons"><span>completed</span>
