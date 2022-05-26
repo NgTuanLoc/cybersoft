@@ -1,0 +1,38 @@
+html,
+body {
+  font-size: 62.5%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: url("../public/images/background.jpg") center no-repeat;
+  background-size: cover;
+  background-color: rgba(50, 70, 80, 0.5);
+  background-blend-mode: soft-light;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.model img {
+  width: 20rem;
+}
+
+.glasses {
+  background-color: white;
+}
+
+/* Typography */
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+/* Utilities */
