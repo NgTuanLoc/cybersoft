@@ -25,8 +25,40 @@ body {
   width: 20rem;
 }
 
+.model__target {
+  position: relative;
+}
+
+.model__glasses {
+  position: absolute;
+  background-color: transparent;
+  top: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  mix-blend-mode: multiply;
+}
+
+.model__glasses img {
+  width: 11rem;
+}
+
 .glasses {
-  background-color: white;
+  margin-top: 15rem;
+  background-color: rgba(50, 70, 80, 0.5);
+}
+
+.glasses__item {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+
+.glasses__item:hover {
+  border: 2px solid blue;
+}
+
+.glasses img {
+  width: 17rem;
 }
 
 /* Typography */
