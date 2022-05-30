@@ -1,6 +1,5 @@
 const Modal = ({ modalState }) => {
-  console.log(modalState);
-  const [id, name, description, shortDescription, quantity] = modalState;
+  const [name, description, shortDescription, quantity] = modalState;
   return (
     <div
       className="modal fade"

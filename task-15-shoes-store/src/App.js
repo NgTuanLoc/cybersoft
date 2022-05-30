@@ -11,7 +11,6 @@ const App = () => {
     setmodalState(modalData);
   };
 
-  console.log(modalState);
   return (
     <div className="app container-fluid">
       <h1 className="text-center mb-5">Shoes Shop</h1>

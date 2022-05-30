@@ -27,7 +27,7 @@ const ProductItem = ({ item, onClickModal }) => {
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
           onClick={() =>
-            onClickModal([id, name, description, shortDescription, quantity])
+            onClickModal([name, description, shortDescription, quantity])
           }
         >
           Add to carts {""}
